@@ -27,11 +27,9 @@ import './CourseInput.css';
   }
   return(
     <form onSubmit={formSubmitHandler}>
-        <div className='form-control'>
-            <label htmlFor="goalInput"
-            style={{color:!isValid?"red":'black'}}> Course Goal</label>
+        <div className={`form-control ${!isValid ? "invalid":""}`}>
+            <label htmlFor="goalInput"> Course Goal</label>
             <input type='text' id='goalInput' 
-            style={{background:!isValid?"lightpink":"transparent",borderColor:!isValid?"red":"black"}}
             value={newInput} 
             onChange={goalInputChangeHandler}/>
         </div>

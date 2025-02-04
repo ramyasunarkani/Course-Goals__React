@@ -19,11 +19,11 @@
     border-color:  #8b005d;
     background-color: white#fad0ec;
 }
-/* .form-control.invalid label{
+.form-control.invalid label{
     color: red;
 }
 
 .form-control.invalid input{
     background-color: lightpink;
     border-color: red;
-} */
+}
